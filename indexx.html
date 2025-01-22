@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        .awal {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .top-content {
+            margin-top: 20px;
+        }
+
+        .title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .names {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0.2em 0;
+        }
+
+        .date {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        .prayer {
+            font-size: 1em;
+            line-height: 1.6;
+            padding: 0 15px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="awal">
+        <div class="top-content">
+            <div class="title">The Wedding of</div>
+            <div class="names">Feby &amp; Drajad</div>
+            <div class="date">Rabu, 06 November 2024</div>
+        </div>
+        <div class="prayer">
+            Ya Tuhanku Yang Maha Pengasih, anugrahkanlah kepada pasangan ini senantiasa kebahagiaan, kesehatan,
+            tetap bersatu<br>dan tidak pernah terpisahkan, panjang umur dan tinggal di rumah yang penuh kegembiraan
+            bersama seluruh keturunannya.
+        </div>
+    </section>
+
+    <script>
+        const images = [
+            "image3.png",
+            "image2.png",
+            "image1.png",
+            "image4.png"
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            const section = document.querySelector('.awal');
+            section.style.backgroundImage = `url(${images[currentIndex]})`;
+            currentIndex = (currentIndex + 1) % images.length; // Loop kembali ke awal
+        }
+
+        setInterval(changeBackground, 3000);
+
+        // Inisialisasi gambar pertama
+        changeBackground();
+    </script>
+</body>
+
+</html>
