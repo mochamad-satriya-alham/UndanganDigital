@@ -208,30 +208,3 @@ html {
 .img {
     font-size: 16px;
 }
-
-.timer {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    background: lightgray;
-    margin-right: 20rem;
-    margin-left: 20rem;
-    margin-top: 5rem;
-}
-
-.time1 {
-    font-size: 3rem;
-    margin: 10px 0;
-}
-
-.label {
-    font-size: 1rem;
-    color: black;
-}
-
-.timer h1 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
